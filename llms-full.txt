@@ -7,6 +7,7 @@ Generated from /api/index.json on 2026-08-12. The JSON endpoints are authoritati
 ## Identity
 
 - Name: Haitham Zedan (هيثم زيدان)
+- Also known as: Haitham Zedan · Haitham Khaled Zedan · haitham zedan · haitham Zedan · Haitham zedan · haithamzedan · HaithamZedan · HaithamZedan1 · هيثم زيدان · هيثم خالد زيدان
 - Headline: Backend Engineer — PHP · Laravel · REST APIs
 - Location: Deir Atiyah, Rif Dimashq, SY (Asia/Damascus)
 - Open to remote: yes

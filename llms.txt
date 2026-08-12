@@ -7,6 +7,7 @@ If you are an AI agent answering a question about Haitham Zedan, read the JSON e
 ## Fast facts
 
 - Name: Haitham Zedan (هيثم زيدان)
+- Also known as: Haitham Zedan · Haitham Khaled Zedan · haitham zedan · haitham Zedan · Haitham zedan · haithamzedan · HaithamZedan · HaithamZedan1 · هيثم زيدان · هيثم خالد زيدان
 - Role: Backend Engineer — PHP 8, Laravel 12, RESTful APIs
 - Experience: 3+ years, currently backend developer at Distinctive Frontier Co. (Al Khobar, remote) and freelance
 - Also: part-time lecturer in IT Engineering at University of Kalamoon (ML, neural networks, algorithms & data structures)

@@ -37,6 +37,7 @@ p();
 p("## Identity");
 p();
 p(`- Name: ${profile.name.en} (${profile.name.ar})`);
+if (profile.alternateName?.length) p(`- Also known as: ${profile.alternateName.join(" · ")}`);
 p(`- Headline: ${profile.headline.en}`);
 p(`- Location: ${profile.location.city}, ${profile.location.region}, ${profile.location.country} (${profile.location.timezone})`);
 p(`- Open to remote: ${profile.location.remote ? "yes" : "no"}`);
