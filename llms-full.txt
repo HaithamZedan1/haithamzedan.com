@@ -13,7 +13,7 @@ Generated from /api/index.json on 2026-08-12. The JSON endpoints are authoritati
 - Languages: ar (native), en (professional working proficiency)
 - Email: zedanhaitham78@gmail.com
 - GitHub: https://github.com/HaithamZedan1
-- LinkedIn: https://www.linkedin.com/in/haitham-zedan-391668221
+- LinkedIn: https://www.linkedin.com/in/haithamzedan/
 - Availability: open_to_opportunities, 4 weeks notice, remote / hybrid / onsite
 
 ## Experience
