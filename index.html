@@ -7,19 +7,26 @@
 <meta name="description" content="Backend engineer in Deir Atiyah, Syria. Production Laravel APIs for marketplaces, on-demand delivery, and multi-tenant SaaS. Two apps live on Google Play and the App Store.">
 <meta name="author" content="Haitham Zedan">
 <link rel="canonical" href="https://haithamzedan.com/">
+<link rel="alternate" hreflang="en" href="https://haithamzedan.com/">
+<link rel="alternate" hreflang="ar" href="https://haithamzedan.com/?lang=ar">
+<link rel="alternate" hreflang="x-default" href="https://haithamzedan.com/">
 <link rel="alternate" type="text/plain" href="llms.txt" title="llms.txt">
 <link rel="alternate" type="application/json" href="api/index.json" title="Machine-readable profile">
 <link rel="preload" as="image" href="assets/haitham.jpg">
-<link rel="icon" type="image/jpeg" href="assets/haitham-96.jpg">
+<link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+<link rel="icon" type="image/jpeg" href="assets/haitham-96.jpg" sizes="96x96">
 <link rel="apple-touch-icon" href="assets/haitham-280.jpg">
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="#0f1620" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#f7f7f8" media="(prefers-color-scheme: light)">
 
 <meta property="og:type" content="profile">
+<meta property="og:url" content="https://haithamzedan.com/">
 <meta property="og:title" content="Haitham Zedan — Backend Engineer">
 <meta property="og:description" content="Production Laravel APIs. Money that reconciles to the cent, permissions that hold, releases that don't take the service down.">
 <meta property="og:image" content="https://haithamzedan.com/assets/haitham.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_AR">
 <meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
@@ -155,6 +162,7 @@ html[data-lang="ar"] .nav a{font-family:var(--ar);font-size:14px}
 .icon-btn.fill{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
 .icon-btn.fill:hover{background:var(--accent);color:var(--on-accent);filter:brightness(1.08)}
 .icon-btn svg:not(.ext){width:14px;height:14px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+html[data-lang="ar"] .icon-btn{font-family:var(--ar);letter-spacing:0}
 .burger{display:none}
 
 #themeBtn [data-ic]{display:none}
@@ -287,12 +295,12 @@ h3 a:hover{color:var(--accent);text-decoration:none}
 .metrics{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0}
 .metric{border:1px solid var(--line);border-radius:8px;padding:7px 12px;background:var(--accent-soft);transition:transform .25s var(--ease),border-color .25s var(--ease)}
 .metric:hover{transform:translateY(-2px);border-color:var(--accent)}
-.metric .m-n{font-family:var(--mono);font-size:16px;font-weight:650;color:var(--accent);line-height:1;letter-spacing:-.03em;display:block}
+.metric .m-n{font-family:var(--mono);font-size:16px;font-weight:650;color:var(--accent);line-height:1;letter-spacing:-.03em;display:block;direction:ltr;unicode-bidi:isolate}
 .metric .m-l{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--text-3);margin-top:5px;display:block}
 html[data-lang="ar"] .metric .m-l{font-family:var(--ar);letter-spacing:0;text-transform:none;font-size:12px}
 
 .stack{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}
-.tag{font-family:var(--mono);font-size:11px;color:var(--text-2);border:1px solid var(--line);border-radius:5px;padding:3px 8px;background:var(--surface-2);transition:color .2s,border-color .2s,transform .2s var(--ease)}
+.tag{font-family:var(--mono);font-size:11px;color:var(--text-2);border:1px solid var(--line);border-radius:5px;padding:3px 8px;background:var(--surface-2);direction:ltr;unicode-bidi:isolate;transition:color .2s,border-color .2s,transform .2s var(--ease)}
 .tag:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
 
 /* grouped skills */
@@ -326,6 +334,7 @@ html[data-lang="ar"] .credit{font-family:var(--ar);font-size:13px}
 .cert:hover b{color:var(--accent)}
 .cert span{display:block;font-family:var(--mono);font-size:11px;color:var(--text-3);margin-top:3px}
 html[data-lang="ar"] .cert span{font-family:var(--ar);font-size:12.5px}
+html[data-lang="ar"] .cert span[data-l="en"],html[data-lang="en"] .cert span[data-l="ar"]{display:none}
 .cert .ext{margin-top:5px;margin-inline-start:auto}
 
 /* ============ contact ============ */
@@ -455,7 +464,7 @@ html[data-lang="ar"] .foot-note{font-family:var(--ar);font-size:13px}
     <div class="stat"><span class="num" data-count="3">3</span><span class="lbl"><span data-l="en">Years shipping</span><span data-l="ar">سنوات خبرة</span></span></div>
     <div class="stat"><span class="num" data-count="3">3</span><span class="lbl"><span data-l="en">Products live</span><span data-l="ar">منتجات تعمل</span></span></div>
     <div class="stat"><span class="num" data-count="7">7</span><span class="lbl"><span data-l="en">OTP channels</span><span data-l="ar">قنوات OTP</span></span></div>
-    <div class="stat"><span class="num" data-count="50">50</span><span class="lbl"><span data-l="en">Documented endpoints</span><span data-l="ar">مسار موثّق</span></span></div>
+    <div class="stat"><span class="num" data-count="50">50</span><span class="lbl"><span data-l="en">Documented endpoints</span><span data-l="ar">مسارات موثّقة</span></span></div>
     <div class="stat"><span class="num">0</span><span class="lbl"><span data-l="en">Downtime deploys</span><span data-l="ar">توقّف عند النشر</span></span></div>
   </div>
 
@@ -498,7 +507,7 @@ html[data-lang="ar"] .foot-note{font-family:var(--ar);font-size:13px}
       <div class="card-top">
         <div>
           <h3><a href="https://play.google.com/store/apps/details?id=com.gazxpress24.app">Gas Express <svg class="ext" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a></h3>
-          <div class="org"><span data-l="en">On-demand delivery · Google Play &amp; App Store</span><span data-l="ar">توصيل عند الطلب · Google Play وApp Store</span></div>
+          <div class="org"><span data-l="en">On-demand delivery · Google Play &amp; App Store</span><span data-l="ar">توصيل عند الطلب · <bdi>Google Play</bdi> و<bdi>App Store</bdi></span></div>
         </div>
         <span class="when"><a class="lnk" href="https://www.instagram.com/technova_code/">TechNova Code</a></span>
       </div>
@@ -779,7 +788,7 @@ html[data-lang="ar"] .foot-note{font-family:var(--ar);font-size:13px}
     <div class="foot-row">
       <p class="foot-note">
         <span data-l="en">Built as a static site with no framework and no dependencies, so every word is readable by people and machines alike.<br>© 2026 Haitham Zedan · hand-written HTML, CSS, and ES modules</span>
-        <span data-l="ar">بُني موقعًا ثابتًا بلا إطار عمل وبلا اعتماديات، حتى تكون كل كلمة فيه مقروءة للبشر والآلات على حدّ سواء.<br>© 2026 هيثم زيدان · HTML وCSS ووحدات ES مكتوبة يدويًا</span>
+        <span data-l="ar">بُنِيَ كموقع ثابت بلا إطار عمل ولا اعتماديات، لتكون كل كلمة فيه مقروءة للبشر والآلات معًا.<br>© 2026 هيثم زيدان · HTML وCSS ووحدات ES مكتوبة يدويًا</span>
       </p>
       <div class="foot-meta">
         <a href="llms.txt">llms.txt</a>
@@ -824,14 +833,57 @@ html[data-lang="ar"] .foot-note{font-family:var(--ar);font-size:13px}
   });
 
   /* ---------- language ---------- */
+  var SEO = {
+    en: {
+      title: "Haitham Zedan — Backend Engineer · PHP · Laravel · REST APIs",
+      desc: "Backend engineer in Deir Atiyah, Syria. Production Laravel APIs for marketplaces, on-demand delivery, and multi-tenant SaaS. Two apps live on Google Play and the App Store.",
+      ogTitle: "Haitham Zedan — Backend Engineer",
+      ogDesc: "Production Laravel APIs. Money that reconciles to the cent, permissions that hold, releases that don't take the service down.",
+      url: "https://haithamzedan.com/"
+    },
+    ar: {
+      title: "هيثم زيدان — مهندس برمجيات خلفية · PHP وLaravel وواجهات REST",
+      desc: "مهندس برمجيات خلفية في دير عطية، سوريا. واجهات Laravel إنتاجية لأسواق إلكترونية وتطبيقات توصيل عند الطلب وأنظمة SaaS متعددة المستأجرين. تطبيقان يعملان على Google Play وApp Store.",
+      ogTitle: "هيثم زيدان — مهندس برمجيات خلفية",
+      ogDesc: "واجهات Laravel إنتاجية. حسابات تتطابق حتى آخر وحدة، وصلاحيات تصمد، وإصدارات لا تُوقِف الخدمة.",
+      url: "https://haithamzedan.com/?lang=ar"
+    }
+  };
+  var descMeta   = document.querySelector('meta[name="description"]'),
+      ogTitleMeta = document.querySelector('meta[property="og:title"]'),
+      ogDescMeta  = document.querySelector('meta[property="og:description"]'),
+      ogUrlMeta   = document.querySelector('meta[property="og:url"]');
+
   function setLang(l) {
     root.setAttribute("data-lang", l);
     root.setAttribute("lang", l);
     root.setAttribute("dir", l === "ar" ? "rtl" : "ltr");
     store("hz-lang", l);
+
+    var s = SEO[l] || SEO.en;
+    document.title = s.title;
+    if (descMeta)    descMeta.setAttribute("content", s.desc);
+    if (ogTitleMeta) ogTitleMeta.setAttribute("content", s.ogTitle);
+    if (ogDescMeta)  ogDescMeta.setAttribute("content", s.ogDesc);
+    if (ogUrlMeta)   ogUrlMeta.setAttribute("content", s.url);
+
+    // keep the URL shareable/deep-linkable — no new history entry, hash preserved
+    try {
+      var q = l === "ar" ? "?lang=ar" : "";
+      history.replaceState(null, "", location.pathname + q + location.hash);
+    } catch (e) {}
+
     tick();
   }
-  setLang(store("hz-lang") || ((navigator.language || "en").toLowerCase().indexOf("ar") === 0 ? "ar" : "en"));
+
+  function initialLang() {
+    var m = location.search.match(/[?&]lang=(ar|en)\b/);   // a shared ?lang= link wins
+    if (m) return m[1];
+    var saved = store("hz-lang");
+    if (saved === "ar" || saved === "en") return saved;    // then a returning visitor's choice
+    return (navigator.language || "en").toLowerCase().indexOf("ar") === 0 ? "ar" : "en";
+  }
+  setLang(initialLang());
   document.getElementById("lang").addEventListener("click", function () {
     setLang(root.getAttribute("data-lang") === "ar" ? "en" : "ar");
   });
