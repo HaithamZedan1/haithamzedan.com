@@ -1,0 +1,46 @@
+# This site wants to be read by machines. Everything here is public and intentional.
+
+User-agent: *
+Allow: /
+
+# Named AI crawlers — explicitly welcome.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+# Structured entry points, in preference order:
+#   /llms.txt        index for agents
+#   /llms-full.txt   entire profile, one document
+#   /api/index.json  endpoint discovery
+#   /mcp             MCP server (streamable HTTP)
+
+Sitemap: https://haithamzedan.com/sitemap.xml

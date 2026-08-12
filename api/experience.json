@@ -1,0 +1,110 @@
+{
+  "count": 4,
+  "total_years": 3,
+  "items": [
+    {
+      "id": "distinctive-frontier",
+      "title": {
+        "en": "Backend Developer",
+        "ar": "مطوّر Backend"
+      },
+      "company": "Distinctive Frontier Co. for Safety Equipment L.L.C",
+      "company_url": "https://www.linkedin.com/company/dfspumps/",
+      "location": "Al Khobar, Saudi Arabia",
+      "arrangement": "remote",
+      "start": "2025-02",
+      "end": null,
+      "current": true,
+      "highlights": {
+        "en": [
+          "Design and build the RESTful APIs behind internal platforms, secured with role-based access control across admin and staff areas.",
+          "Automated quotation generation into templated Excel files, replacing manual document preparation.",
+          "Introduced GitHub Actions CI/CD with atomic, symlink-based zero-downtime deployments across 4 projects on 3 servers — releases run during working hours with rollback in seconds.",
+          "Keep controllers thin and queries consistent with reusable Eloquent query scopes and form-request validation."
+        ],
+        "ar": [
+          "تصميم وبناء واجهات RESTful API للمنصات الداخلية مع صلاحيات قائمة على الأدوار تفصل نطاقات الإدارة والموظفين.",
+          "أتمتة توليد عروض الأسعار ضمن ملفات Excel وفق قوالب جاهزة بدل الإعداد اليدوي.",
+          "إدخال خطوط CI/CD عبر GitHub Actions مع نشر ذرّي بدون توقف عبر 4 مشاريع على 3 خوادم، مع تراجع خلال ثوانٍ.",
+          "الحفاظ على كود نظيف عبر Query Scopes وForm Requests."
+        ]
+      },
+      "stack": ["PHP 8", "Laravel 12", "MySQL", "GitHub Actions", "Nginx", "Ubuntu"]
+    },
+    {
+      "id": "freelance",
+      "title": {
+        "en": "Backend Developer (Freelance)",
+        "ar": "مطوّر Backend — عمل حر"
+      },
+      "company": "Independent — clients include TechNova Code, NexLead",
+      "clients": [
+        { "name": "TechNova Code", "url": "https://www.instagram.com/technova_code/" },
+        { "name": "NexLead", "url": "https://www.instagram.com/nexlead_tech/" }
+      ],
+      "location": "Remote",
+      "arrangement": "remote",
+      "start": "2023-07",
+      "end": null,
+      "current": true,
+      "highlights": {
+        "en": [
+          "Deliver production Laravel backends end-to-end for client products — API design, authentication, payments logic, push notifications, documentation, and deployment.",
+          "Three shipped products: Gas Express, Rento Car, and Receipt Scanner (see /api/projects.json)."
+        ],
+        "ar": [
+          "تسليم أنظمة Backend إنتاجية متكاملة بإطار Laravel — تصميم الـ API والمصادقة ومنطق المدفوعات والإشعارات والتوثيق والنشر.",
+          "ثلاثة منتجات منشورة: Gas Express وRento Car وReceipt Scanner (انظر /api/projects.json)."
+        ]
+      },
+      "stack": ["Laravel", "Sanctum", "MySQL", "Laravel Reverb", "FCM", "PHPUnit"]
+    },
+    {
+      "id": "kalamoon-lecturer",
+      "title": {
+        "en": "Lecturer (Part-time), Faculty of IT Engineering",
+        "ar": "مدرّس بدوام جزئي — كلية هندسة تقانة المعلومات"
+      },
+      "company": "University of Kalamoon",
+      "company_url": "https://www.linkedin.com/school/kalamoon/",
+      "location": "Deir Atiyah, Syria",
+      "arrangement": "onsite",
+      "start": "2025-09",
+      "end": "2026-08",
+      "current": true,
+      "highlights": {
+        "en": [
+          "Teach Machine Learning, Neural Networks, Algorithms & Data Structures, Mobile Application Development, and Programming II (C#) to undergraduates."
+        ],
+        "ar": [
+          "تدريس تعلّم الآلة والشبكات العصبية والخوارزميات وبنى المعطيات وتطوير تطبيقات الموبايل والبرمجة II بلغة C#."
+        ]
+      },
+      "stack": ["Python", "C#", "Algorithms", "Machine Learning"]
+    },
+    {
+      "id": "raed-it",
+      "title": {
+        "en": "Backend Developer (Part-time)",
+        "ar": "مطوّر Backend بدوام جزئي"
+      },
+      "company": "Raed For IT Services",
+      "location": "Remote — Germany",
+      "arrangement": "remote",
+      "start": "2024-08",
+      "end": "2025-02",
+      "current": false,
+      "highlights": {
+        "en": [
+          "Developed RESTful APIs supporting data exchange between distributed systems and client applications.",
+          "Integrated third-party APIs and optimized SQL queries for reliable, fast database interactions."
+        ],
+        "ar": [
+          "تطوير واجهات RESTful API لتبادل البيانات بين أنظمة موزّعة وتطبيقات العملاء.",
+          "التكامل مع واجهات خارجية وتحسين استعلامات SQL."
+        ]
+      },
+      "stack": ["PHP", "Laravel", "SQL", "REST"]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "count": 3,
+  "items": [
+    {
+      "id": "gas-express",
+      "name": "Gas Express",
+      "tagline": {
+        "en": "On-demand gas delivery platform",
+        "ar": "منصة توصيل الغاز عند الطلب"
+      },
+      "role": "Sole backend engineer",
+      "client": "TechNova Code",
+      "status": "live",
+      "links": {
+        "google_play": "https://play.google.com/store/apps/details?id=com.gazxpress24.app",
+        "app_store": null
+      },
+      "client_url": "https://www.instagram.com/technova_code/",
+      "note": "Live on Google Play and the App Store.",
+      "problem": {
+        "en": "A delivery service operating across the Daraa governorate needed one API to serve a customer app, a driver app, and an admin panel — in a region where SMS provider outages are routine.",
+        "ar": "خدمة توصيل تعمل في محافظة درعا تحتاج واجهة API واحدة تخدم تطبيق الزبون وتطبيق السائق ولوحة الإدارة، في بيئة يتكرر فيها انقطاع مزوّدي الرسائل."
+      },
+      "highlights": {
+        "en": [
+          "One versioned API (v1/v2 in parallel) powering three clients.",
+          "Phone-first authentication with OTP across seven runtime-selectable delivery channels (Twilio SMS & WhatsApp, 360dialog, Telegram, Prelude, Syriatel, in-app) — providers switch from a settings table with no redeploy, so a provider outage is a config change instead of an outage.",
+          "Full order lifecycle: driver task tracking with timestamped status transitions, scheduled orders, floor-based delivery fees, idempotent hash-deduplicated push notifications, PDF report export, and revenue reporting by day/month/year and per driver."
+        ],
+        "ar": [
+          "واجهة API واحدة بإصدارات متوازية تخدم ثلاثة تطبيقات.",
+          "مصادقة عبر رقم الهاتف برموز OTP قابلة للتوجيه عبر سبع قنوات تُختار من جدول إعدادات دون إعادة نشر، فيصبح انقطاع المزوّد إجراءً إداريًا لا عطلًا في الخدمة.",
+          "دورة حياة طلب كاملة: تتبّع مهام السائقين، طلبات مجدولة، رسوم توصيل حسب الطابق، إشعارات لا تتكرر، تقارير PDF وتقارير إيرادات."
+        ]
+      },
+      "stack": ["Laravel 12", "Laravel Sanctum", "FCM", "Twilio", "360dialog", "Telegram Bot API", "dompdf", "MySQL"]
+    },
+    {
+      "id": "rento-car",
+      "name": "Rento Car",
+      "tagline": {
+        "en": "Car-rental marketplace",
+        "ar": "سوق تأجير السيارات"
+      },
+      "role": "Backend engineer",
+      "client": "TechNova Code",
+      "status": "live",
+      "links": {
+        "google_play": "https://play.google.com/store/apps/details?id=com.rentocar.app"
+      },
+      "client_url": "https://www.instagram.com/technova_code/",
+      "note": "Live on Google Play.",
+      "problem": {
+        "en": "A three-sided marketplace where every booking splits revenue between the platform and an independent rental office — and the two shares must always reconcile exactly, even when coupons and loyalty points subsidise the customer.",
+        "ar": "سوق ثلاثي الأطراف تُقسَّم فيه إيرادات كل حجز بين المنصة ومكتب التأجير، ويجب أن تتطابق الحصتان تمامًا حتى مع وجود كوبونات ونقاط ولاء."
+      },
+      "highlights": {
+        "en": [
+          "Bilingual (EN/AR) REST API for admin, rental offices, and customers — with developer API-key gating, Sanctum auth, role middleware, and per-endpoint named rate limiters.",
+          "Commission & settlement engine in fixed-point BCMath: time-versioned per-office commission rates, coupon/points subsidies absorbed by the platform, and rounding designed so office and platform shares always reconcile to the cent.",
+          "Office wallets, transactions and settlements, loyalty points with referral chains, coupons, and full price snapshotting so historical bookings never change when prices do.",
+          "Real-time notifications over private WebSocket channels (Laravel Reverb) and queued FCM HTTP v1 push with dead-token pruning; documented with OpenAPI/Swagger and unit-tested on the money math."
+        ],
+        "ar": [
+          "واجهة API ثنائية اللغة تخدم الإدارة ومكاتب التأجير والزبائن، مع مفاتيح API ووسائط أدوار ومحدّدات معدّل لكل مسار.",
+          "محرّك عمولات وتسويات بحساب عشري ثابت (BCMath) مع نسب مؤرّخة لكل مكتب وتقريب مصمَّم بحيث تتطابق الحصص دائمًا.",
+          "محافظ للمكاتب وحركات وتسويات، ونظام نقاط ولاء بسلاسل إحالة، وكوبونات، ولقطات أسعار تحفظ الحجوزات التاريخية من التغيّر.",
+          "إشعارات لحظية عبر قنوات WebSocket خاصة (Laravel Reverb) وإشعارات FCM ضمن طوابير مع تنظيف التوكنات الميتة."
+        ]
+      },
+      "stack": ["PHP 8.2", "Laravel 12", "Laravel Reverb", "BCMath", "FCM HTTP v1", "PHPUnit", "OpenAPI/Swagger", "MySQL"]
+    },
+    {
+      "id": "receipt-scanner",
+      "name": "Receipt Scanner",
+      "tagline": {
+        "en": "Multi-tenant AI expense SaaS",
+        "ar": "منصة إدارة نفقات بالذكاء الاصطناعي متعددة المستأجرين"
+      },
+      "role": "Backend engineer",
+      "client": "NexLead",
+      "status": "live",
+      "links": {
+        "website": "https://receipt.nexleadtech.com"
+      },
+      "client_url": "https://www.instagram.com/nexlead_tech/",
+      "collaborators": [
+        { "name": "Nour Aldeen Tofi", "role": "Frontend", "url": "https://nouraldeentofi.com/projects" }
+      ],
+      "problem": {
+        "en": "Expense claims are easy to game — the same receipt submitted twice, a lightly edited image, a claim filed by two employees. The system needed to catch that automatically and be able to explain every decision to an auditor.",
+        "ar": "مطالبات النفقات قابلة للتلاعب: إيصال يُقدَّم مرتين، صورة معدّلة، مطالبة مكرّرة بين موظفين. النظام يحتاج كشفًا آليًا وقدرة على تبرير كل قرار أمام مدقّق."
+      },
+      "highlights": {
+        "en": [
+          "Multi-tenant Laravel backend behind an Arabic/English AI receipt-processing product: isolated company data with manager/accountant/employee roles and record-level permissions.",
+          "Explainable fraud-detection engine running 8+ weighted checks per receipt — SHA-256 and perceptual-hash duplicate detection (Hamming distance), EXIF tampering forensics, upload-velocity analysis, OCR-to-data cross-validation, and duplicate-claim matching — producing an audited 0–100 fraud score that auto-routes receipts to approve / review / flag.",
+          "OCR pre-filter that rejects tampered or unusable images before AI processing, cutting wasted API tokens and response time.",
+          "~50 documented REST endpoints with Excel export, comments & notifications, and feature tests covering the fraud pipeline end-to-end."
+        ],
+        "ar": [
+          "نظام Backend متعدد المستأجرين بعزل كامل لبيانات كل شركة وصلاحيات على مستوى السجل لأدوار المدير والمحاسب والموظف.",
+          "محرّك كشف احتيال قابل للتفسير ينفّذ أكثر من 8 فحوص موزونة لكل إيصال — بصمات SHA-256 وبصمات إدراكية، وتحليل EXIF، وسرعة الرفع، والمطابقة المتقاطعة بين OCR والبيانات — وينتج درجة 0–100 مُدقّقة توجّه الإيصال تلقائيًا.",
+          "مرشّح OCR أوّلي يرفض الصور غير الصالحة قبل معالجتها بالذكاء الاصطناعي، ما يقلّل الاستهلاك وزمن الاستجابة.",
+          "نحو 50 مسار API موثّقًا مع تصدير Excel وتعليقات وإشعارات واختبارات تغطي مسار كشف الاحتيال كاملًا."
+        ]
+      },
+      "stack": ["Laravel", "Queued jobs", "n8n", "GPT-Vision pipeline", "OpenAPI", "Perceptual hashing", "MySQL"]
+    }
+  ]
+}

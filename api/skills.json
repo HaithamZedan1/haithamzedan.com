@@ -1,0 +1,36 @@
+{
+  "primary": ["PHP 8", "Laravel", "RESTful API design", "MySQL", "RBAC & multi-level permissions", "Queue workers & background jobs", "Unit & feature testing", "CI/CD & zero-downtime deployment"],
+  "groups": [
+    {
+      "id": "backend",
+      "label": { "en": "Backend", "ar": "الواجهة الخلفية" },
+      "items": ["PHP 8.x", "Laravel 12", "RESTful API design", "Eloquent ORM", "MVC", "Laravel Sanctum", "Queues & background jobs", "Rate limiting", "Caching", "API versioning", "OpenAPI/Swagger (L5-Swagger)", "PHPUnit", "TDD/BDD"]
+    },
+    {
+      "id": "databases",
+      "label": { "en": "Databases", "ar": "قواعد البيانات" },
+      "items": ["MySQL", "PostgreSQL", "SQLite", "Microsoft SQL Server", "Schema design", "Indexing", "Query optimization"]
+    },
+    {
+      "id": "realtime",
+      "label": { "en": "Real-time & integrations", "ar": "الزمن الحقيقي والتكامل" },
+      "items": ["Laravel Reverb (WebSockets)", "Firebase Cloud Messaging (HTTP v1)", "Twilio SMS/WhatsApp", "360dialog", "Telegram Bot API", "OTP flows", "n8n", "Third-party API integration"]
+    },
+    {
+      "id": "devops",
+      "label": { "en": "DevOps & tools", "ar": "DevOps والأدوات" },
+      "items": ["Git & Git Flow", "GitHub Actions CI/CD", "Atomic zero-downtime deployment", "Docker", "Kubernetes/OpenShift", "Linux (Ubuntu)", "Nginx", "Jira"]
+    },
+    {
+      "id": "other",
+      "label": { "en": "Other", "ar": "أخرى" },
+      "items": ["Agile/Scrum", "SDLC", "Code review", "Python", "Flutter/Dart", "C++", "C#"]
+    }
+  ],
+  "certifications": [
+    { "name": "IBM Applied DevOps Engineering — Professional Certificate", "issuer": "IBM", "date": "2025-10" },
+    { "name": "Meta Back-End Developer — Professional Certificate", "issuer": "Meta", "date": "2025-05" },
+    { "name": "Flutter and Dart: Developing iOS, Android, and Mobile Apps", "issuer": "IBM", "date": "2026-02" },
+    { "name": "Mastering Laravel Framework and PHP", "issuer": "Board Infinity", "date": "2025-04" }
+  ]
+}

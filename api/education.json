@@ -1,0 +1,40 @@
+{
+  "count": 2,
+  "items": [
+    {
+      "id": "svu-msc",
+      "degree": {
+        "en": "M.Sc. Web Science & Artificial Intelligence",
+        "ar": "ماجستير علوم الويب والذكاء الاصطناعي"
+      },
+      "institution": {
+        "en": "Syrian Virtual University",
+        "ar": "الجامعة الافتراضية السورية"
+      },
+      "url": "https://www.svuonline.org/",
+      "start": "2026",
+      "end": "2028",
+      "status": "in_progress"
+    },
+    {
+      "id": "kalamoon-be",
+      "degree": {
+        "en": "B.E. Information Technology Engineering",
+        "ar": "إجازة في هندسة تقانة المعلومات"
+      },
+      "institution": {
+        "en": "University of Kalamoon",
+        "ar": "جامعة القلمون"
+      },
+      "url": "https://www.linkedin.com/school/kalamoon/",
+      "start": "2020",
+      "end": "2024",
+      "status": "completed",
+      "gpa": "3.39 / 4.0",
+      "distinction": {
+        "en": "Highest in class",
+        "ar": "الأول على الدفعة"
+      }
+    }
+  ]
+}

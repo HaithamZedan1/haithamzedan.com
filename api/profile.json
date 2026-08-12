@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.org/Person",
+  "id": "haitham-zedan",
+  "name": {
+    "en": "Haitham Zedan",
+    "ar": "هيثم زيدان"
+  },
+  "headline": {
+    "en": "Backend Engineer — PHP · Laravel · REST APIs",
+    "ar": "مهندس برمجيات خلفية — PHP · Laravel · واجهات REST"
+  },
+  "summary": {
+    "en": "Backend engineer with 3+ years building production REST APIs in PHP/Laravel for marketplaces, on-demand delivery, and multi-tenant SaaS. Shipped client products live on Google Play and the App Store. Builds financial engines with exact fixed-point money math, explainable fraud detection, and CI/CD pipelines with zero-downtime atomic deployments.",
+    "ar": "مهندس برمجيات خلفية بخبرة تتجاوز ثلاث سنوات في بناء واجهات REST إنتاجية بلغة PHP وإطار Laravel لأسواق إلكترونية ومنصات توصيل عند الطلب وأنظمة SaaS متعددة المستأجرين. سلّم منتجات منشورة فعليًا على Google Play وApp Store، وبنى محرّكات مالية بحساب عشري ثابت، ومحرّك كشف احتيال قابل للتفسير، وخطوط نشر بدون توقف."
+  },
+  "location": {
+    "city": "Deir Atiyah",
+    "region": "Rif Dimashq",
+    "country": "SY",
+    "timezone": "Asia/Damascus",
+    "remote": true
+  },
+  "languages": [
+    {
+      "code": "ar",
+      "level": "native"
+    },
+    {
+      "code": "en",
+      "level": "professional working proficiency"
+    }
+  ],
+  "contact": {
+    "email": "zedanhaitham78@gmail.com",
+    "github": "https://github.com/HaithamZedan1",
+    "linkedin": "https://www.linkedin.com/in/haitham-zedan-391668221"
+  },
+  "availability": {
+    "status": "open_to_opportunities",
+    "notice_period_weeks": 4,
+    "work_modes": [
+      "remote",
+      "hybrid",
+      "onsite"
+    ]
+  },
+  "endpoints": {
+    "profile": "/api/profile.json",
+    "experience": "/api/experience.json",
+    "projects": "/api/projects.json",
+    "skills": "/api/skills.json",
+    "education": "/api/education.json",
+    "index": "/api/index.json",
+    "llms": "/llms.txt",
+    "mcp": "/mcp"
+  },
+  "image": "/assets/haitham.jpg"
+}

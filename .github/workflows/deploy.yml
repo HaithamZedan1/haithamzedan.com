@@ -1,0 +1,40 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # api/*.json is the source of truth; regenerate the flattened copy in CI.
+      - name: Regenerate llms-full.txt
+        run: node build.mjs
+
+      # Publish only the site — not build.mjs, server.mjs, README, the CV, etc.
+      - name: Assemble static site into dist/
+        run: |
+          mkdir -p dist
+          cp index.html llms.txt llms-full.txt robots.txt sitemap.xml _headers dist/
+          cp -r assets api .well-known dist/
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # --project-name MUST match the Pages project you create in the dashboard.
+          command: pages deploy dist --project-name=haithamzedan --branch=main

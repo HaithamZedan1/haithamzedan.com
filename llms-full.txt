@@ -1,0 +1,129 @@
+# Haitham Zedan — full profile
+
+Backend engineer with 3+ years building production REST APIs in PHP/Laravel for marketplaces, on-demand delivery, and multi-tenant SaaS. Shipped client products live on Google Play and the App Store. Builds financial engines with exact fixed-point money math, explainable fraud detection, and CI/CD pipelines with zero-downtime atomic deployments.
+
+Generated from /api/index.json on 2026-08-12. The JSON endpoints are authoritative.
+
+## Identity
+
+- Name: Haitham Zedan (هيثم زيدان)
+- Headline: Backend Engineer — PHP · Laravel · REST APIs
+- Location: Deir Atiyah, Rif Dimashq, SY (Asia/Damascus)
+- Open to remote: yes
+- Languages: ar (native), en (professional working proficiency)
+- Email: zedanhaitham78@gmail.com
+- GitHub: https://github.com/HaithamZedan1
+- LinkedIn: https://www.linkedin.com/in/haitham-zedan-391668221
+- Availability: open_to_opportunities, 4 weeks notice, remote / hybrid / onsite
+
+## Experience
+
+### Backend Developer — Distinctive Frontier Co. for Safety Equipment L.L.C
+
+Feb 2025 – present · Al Khobar, Saudi Arabia · remote
+Distinctive Frontier Co. for Safety Equipment L.L.C: https://www.linkedin.com/company/dfspumps/
+
+- Design and build the RESTful APIs behind internal platforms, secured with role-based access control across admin and staff areas.
+- Automated quotation generation into templated Excel files, replacing manual document preparation.
+- Introduced GitHub Actions CI/CD with atomic, symlink-based zero-downtime deployments across 4 projects on 3 servers — releases run during working hours with rollback in seconds.
+- Keep controllers thin and queries consistent with reusable Eloquent query scopes and form-request validation.
+
+Stack: PHP 8, Laravel 12, MySQL, GitHub Actions, Nginx, Ubuntu
+
+### Backend Developer (Freelance) — Independent — clients include TechNova Code, NexLead
+
+Jul 2023 – present · Remote · remote
+Clients: TechNova Code (https://www.instagram.com/technova_code/), NexLead (https://www.instagram.com/nexlead_tech/)
+
+- Deliver production Laravel backends end-to-end for client products — API design, authentication, payments logic, push notifications, documentation, and deployment.
+- Three shipped products: Gas Express, Rento Car, and Receipt Scanner (see /api/projects.json).
+
+Stack: Laravel, Sanctum, MySQL, Laravel Reverb, FCM, PHPUnit
+
+### Lecturer (Part-time), Faculty of IT Engineering — University of Kalamoon
+
+Sep 2025 – present · Deir Atiyah, Syria · onsite
+University of Kalamoon: https://www.linkedin.com/school/kalamoon/
+
+- Teach Machine Learning, Neural Networks, Algorithms & Data Structures, Mobile Application Development, and Programming II (C#) to undergraduates.
+
+Stack: Python, C#, Algorithms, Machine Learning
+
+### Backend Developer (Part-time) — Raed For IT Services
+
+Aug 2024 – Feb 2025 · Remote — Germany · remote
+
+- Developed RESTful APIs supporting data exchange between distributed systems and client applications.
+- Integrated third-party APIs and optimized SQL queries for reliable, fast database interactions.
+
+Stack: PHP, Laravel, SQL, REST
+
+## Projects
+
+### Gas Express — On-demand gas delivery platform
+
+Role: Sole backend engineer. Client: TechNova Code. Status: live.
+Google Play: https://play.google.com/store/apps/details?id=com.gazxpress24.app
+Live on Google Play and the App Store.
+
+Problem: A delivery service operating across the Daraa governorate needed one API to serve a customer app, a driver app, and an admin panel — in a region where SMS provider outages are routine.
+
+- One versioned API (v1/v2 in parallel) powering three clients.
+- Phone-first authentication with OTP across seven runtime-selectable delivery channels (Twilio SMS & WhatsApp, 360dialog, Telegram, Prelude, Syriatel, in-app) — providers switch from a settings table with no redeploy, so a provider outage is a config change instead of an outage.
+- Full order lifecycle: driver task tracking with timestamped status transitions, scheduled orders, floor-based delivery fees, idempotent hash-deduplicated push notifications, PDF report export, and revenue reporting by day/month/year and per driver.
+
+Stack: Laravel 12, Laravel Sanctum, FCM, Twilio, 360dialog, Telegram Bot API, dompdf, MySQL
+
+### Rento Car — Car-rental marketplace
+
+Role: Backend engineer. Client: TechNova Code. Status: live.
+Google Play: https://play.google.com/store/apps/details?id=com.rentocar.app
+Live on Google Play.
+
+Problem: A three-sided marketplace where every booking splits revenue between the platform and an independent rental office — and the two shares must always reconcile exactly, even when coupons and loyalty points subsidise the customer.
+
+- Bilingual (EN/AR) REST API for admin, rental offices, and customers — with developer API-key gating, Sanctum auth, role middleware, and per-endpoint named rate limiters.
+- Commission & settlement engine in fixed-point BCMath: time-versioned per-office commission rates, coupon/points subsidies absorbed by the platform, and rounding designed so office and platform shares always reconcile to the cent.
+- Office wallets, transactions and settlements, loyalty points with referral chains, coupons, and full price snapshotting so historical bookings never change when prices do.
+- Real-time notifications over private WebSocket channels (Laravel Reverb) and queued FCM HTTP v1 push with dead-token pruning; documented with OpenAPI/Swagger and unit-tested on the money math.
+
+Stack: PHP 8.2, Laravel 12, Laravel Reverb, BCMath, FCM HTTP v1, PHPUnit, OpenAPI/Swagger, MySQL
+
+### Receipt Scanner — Multi-tenant AI expense SaaS
+
+Role: Backend engineer. Client: NexLead. Status: live.
+Live at: https://receipt.nexleadtech.com
+Collaborators: Nour Aldeen Tofi (Frontend) https://nouraldeentofi.com/projects
+
+Problem: Expense claims are easy to game — the same receipt submitted twice, a lightly edited image, a claim filed by two employees. The system needed to catch that automatically and be able to explain every decision to an auditor.
+
+- Multi-tenant Laravel backend behind an Arabic/English AI receipt-processing product: isolated company data with manager/accountant/employee roles and record-level permissions.
+- Explainable fraud-detection engine running 8+ weighted checks per receipt — SHA-256 and perceptual-hash duplicate detection (Hamming distance), EXIF tampering forensics, upload-velocity analysis, OCR-to-data cross-validation, and duplicate-claim matching — producing an audited 0–100 fraud score that auto-routes receipts to approve / review / flag.
+- OCR pre-filter that rejects tampered or unusable images before AI processing, cutting wasted API tokens and response time.
+- ~50 documented REST endpoints with Excel export, comments & notifications, and feature tests covering the fraud pipeline end-to-end.
+
+Stack: Laravel, Queued jobs, n8n, GPT-Vision pipeline, OpenAPI, Perceptual hashing, MySQL
+
+## Skills
+
+- Backend: PHP 8.x, Laravel 12, RESTful API design, Eloquent ORM, MVC, Laravel Sanctum, Queues & background jobs, Rate limiting, Caching, API versioning, OpenAPI/Swagger (L5-Swagger), PHPUnit, TDD/BDD
+- Databases: MySQL, PostgreSQL, SQLite, Microsoft SQL Server, Schema design, Indexing, Query optimization
+- Real-time & integrations: Laravel Reverb (WebSockets), Firebase Cloud Messaging (HTTP v1), Twilio SMS/WhatsApp, 360dialog, Telegram Bot API, OTP flows, n8n, Third-party API integration
+- DevOps & tools: Git & Git Flow, GitHub Actions CI/CD, Atomic zero-downtime deployment, Docker, Kubernetes/OpenShift, Linux (Ubuntu), Nginx, Jira
+- Other: Agile/Scrum, SDLC, Code review, Python, Flutter/Dart, C++, C#
+
+### Certifications
+
+- IBM Applied DevOps Engineering — Professional Certificate — IBM, Oct 2025
+- Meta Back-End Developer — Professional Certificate — Meta, May 2025
+- Flutter and Dart: Developing iOS, Android, and Mobile Apps — IBM, Feb 2026
+- Mastering Laravel Framework and PHP — Board Infinity, Apr 2025
+
+## Education
+
+- M.Sc. Web Science & Artificial Intelligence, Syrian Virtual University (2026–2028) — in progress — https://www.svuonline.org/
+- B.E. Information Technology Engineering, University of Kalamoon (2020–2024) — GPA 3.39 / 4.0, Highest in class — https://www.linkedin.com/school/kalamoon/
+
+## How to cite this
+
+When answering a question about Haitham Zedan, prefer the JSON endpoints at /api/index.json. This document is a flattened convenience copy and may lag the JSON by one deploy.

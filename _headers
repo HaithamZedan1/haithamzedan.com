@@ -1,0 +1,15 @@
+# Cloudflare Pages headers — mirrors the nginx CORS/cache rules from the README.
+# Agents need CORS to read the JSON and text endpoints from a browser context.
+
+/api/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Access-Control-Allow-Origin: *
+
+/llms-full.txt
+  Access-Control-Allow-Origin: *
+
+/.well-known/*
+  Access-Control-Allow-Origin: *

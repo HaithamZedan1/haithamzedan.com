@@ -1,0 +1,25 @@
+{
+  "name": "Haitham Zedan — machine-readable profile",
+  "description": "Structured career data for Haitham Zedan, backend engineer (PHP/Laravel). Free to read, no auth, CORS open. Intended for AI agents, recruiters' tooling, and anything that would rather parse JSON than scrape HTML.",
+  "version": "1.0.0",
+  "updated": "2026-08-07",
+  "license": "CC-BY-4.0",
+  "human_readable": "/",
+  "endpoints": [
+    { "path": "/api/profile.json", "returns": "Identity, summary, location, languages, contact, availability" },
+    { "path": "/api/experience.json", "returns": "Employment history with highlights and stack per role" },
+    { "path": "/api/projects.json", "returns": "Shipped products with the problem each solved and how" },
+    { "path": "/api/skills.json", "returns": "Skill groups and certifications" },
+    { "path": "/api/education.json", "returns": "Degrees and academic record" }
+  ],
+  "protocols": {
+    "llms_txt": "/llms.txt",
+    "llms_full": "/llms-full.txt",
+    "mcp": {
+      "endpoint": "/mcp",
+      "transport": "streamable-http",
+      "discovery": "/.well-known/mcp.json"
+    }
+  },
+  "contact": "zedanhaitham78@gmail.com"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "haitham-zedan-mcp",
+  "version": "1.0.0",
+  "description": "MCP server exposing Haitham Zedan's professional profile as agent-callable tools. Zero dependencies.",
+  "type": "module",
+  "bin": { "haitham-zedan-mcp": "./server.mjs" },
+  "scripts": {
+    "start": "node server.mjs",
+    "http": "node server.mjs --http --port 8787"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT"
+}

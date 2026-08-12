@@ -1,0 +1,20 @@
+{
+  "name": "haitham-zedan",
+  "description": "Query Haitham Zedan's professional profile — experience, shipped projects, skills, education — as MCP tools instead of scraping a CV.",
+  "version": "1.0.0",
+  "protocolVersion": "2025-06-18",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "/mcp"
+  },
+  "authentication": null,
+  "tools": [
+    { "name": "get_profile", "description": "Identity, summary, location, languages, contact, availability" },
+    { "name": "get_experience", "description": "Employment history with highlights and stack per role" },
+    { "name": "list_projects", "description": "Shipped products, one line each" },
+    { "name": "get_project", "description": "Full detail on one project by id" },
+    { "name": "get_skills", "description": "Skill groups and certifications" },
+    { "name": "search", "description": "Free-text search across the whole profile" }
+  ],
+  "contact": "zedanhaitham78@gmail.com"
+}
