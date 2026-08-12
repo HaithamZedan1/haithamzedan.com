@@ -6,7 +6,7 @@
  *   stdio            node server.mjs
  *   streamable HTTP  node server.mjs --http --port 8787
  *
- * Data comes from ../api/*.json — the same files the website serves,
+ * Data comes from api/*.json — the same files the website serves,
  * so the agent-facing tools and the human-facing page can never disagree.
  */
 
@@ -15,7 +15,7 @@ import { createServer } from "node:http";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = join(dirname(fileURLToPath(import.meta.url)), "..");
+const root = dirname(fileURLToPath(import.meta.url));
 const load = (f) => JSON.parse(readFileSync(join(root, "api", f), "utf8"));
 
 const DATA = {
