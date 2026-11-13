@@ -1,0 +1,7 @@
+# Vulnerabilities the team has decided to accept: one ID per line.
+# An entry here is a risk decision, so write the reason and the date above it
+# and review the file like code.
+#
+# Example:
+#   Not reachable: the site is static and never calls the affected function. Accepted 2026-11-12.
+#   CVE-2099-0001

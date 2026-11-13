@@ -1,0 +1,4 @@
+# Send only what the image needs to the build.
+*
+!dist/
+!nginx/

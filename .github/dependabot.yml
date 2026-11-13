@@ -1,0 +1,17 @@
+# Pinned versions go stale. Dependabot opens a pull request when a newer one exists,
+# and the pipeline tests and scans that pull request like any other change.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7 # skip releases younger than a week: most hijacked releases are caught within days
+
+  - package-ecosystem: docker
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7

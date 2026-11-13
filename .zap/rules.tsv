@@ -1,0 +1,18 @@
+# ZAP baseline rules: <rule id>	<IGNORE | WARN | FAIL>	<note>
+# FAIL stops the pipeline. WARN is listed in the ZAP report. IGNORE is a documented decision.
+# Every rule not listed here is a WARN.
+#
+# Must hold: a regression here blocks the release.
+10017	FAIL	(Scripts loaded from another site)
+10021	FAIL	(X-Content-Type-Options header missing)
+10036	FAIL	(Server header leaks its version)
+10037	FAIL	(X-Powered-By header leaks the technology)
+10108	FAIL	(Reverse tabnabbing)
+90022	FAIL	(Application error disclosure)
+#
+# Known gaps on the live site today. Reported on every run until they are fixed.
+10020	WARN	(No anti-clickjacking header yet)
+10038	WARN	(No Content Security Policy yet)
+#
+# Accepted on purpose.
+10098	IGNORE	(CORS is open by design: the profile data is public and meant for agents)
