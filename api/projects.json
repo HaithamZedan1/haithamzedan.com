@@ -9,13 +9,13 @@
         "ar": "منصة توصيل الغاز عند الطلب"
       },
       "role": "Sole backend engineer",
-      "client": "TechNova Code",
+      "client": "TechNova Eagle",
       "status": "live",
       "links": {
         "google_play": "https://play.google.com/store/apps/details?id=com.gazxpress24.app",
         "app_store": null
       },
-      "client_url": "https://www.instagram.com/technova_code/",
+      "client_url": "https://technova-eagle.com",
       "note": "Live on Google Play and the App Store.",
       "problem": {
         "en": "A delivery service operating across the Daraa governorate needed one API to serve a customer app, a driver app, and an admin panel — in a region where SMS provider outages are routine.",
@@ -43,12 +43,12 @@
         "ar": "سوق تأجير السيارات"
       },
       "role": "Backend engineer",
-      "client": "TechNova Code",
+      "client": "TechNova Eagle",
       "status": "live",
       "links": {
         "google_play": "https://play.google.com/store/apps/details?id=com.rentocar.app"
       },
-      "client_url": "https://www.instagram.com/technova_code/",
+      "client_url": "https://technova-eagle.com",
       "note": "Live on Google Play.",
       "problem": {
         "en": "A three-sided marketplace where every booking splits revenue between the platform and an independent rental office — and the two shares must always reconcile exactly, even when coupons and loyalty points subsidise the customer.",
